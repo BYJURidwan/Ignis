@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ignis - Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script> <!--RT Database link-->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script> <!--RT Database link-->
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script> <!--RT Database link-->
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1"> <!--links with Google fonts-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  <!--Bootstrap link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--Bootstrap link-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> <!--Bootstrap link-->
+
+<link rel="stylesheet" type="text/css" href="login.css"> <!--links to .css-->
+
+</head>
+<body>
+<div class="container"> <!--add padding-->
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Log-out</button>
+	<center>
+		<h1 class="header">	
+			Ignis	
+			<sup>
+				<img src="https://flyclipart.com/thumb2/one-message-notification-envelope-icon-free-of-twitter-ui-42228.png">
+			</sup>
+		</h1>
+		<h3 id="user_name" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Add A Room:</label>
+				<input type="text" id="room_name" class="form-control" placeholder="* #ROOMNAME *">
+		</div>
+		<button class="btn btn-success" onclick="addRoom()">#Add Room</button>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+	<div id="output"></div>
+	</center>
+</div>
+
+</body>
+</html>
